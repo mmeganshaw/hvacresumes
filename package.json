@@ -1,0 +1,31 @@
+{
+  "name": "hvacresumes",
+  "version": "1.0.0",
+  "description": "This is a website to help individuals with their HVAC (and related industries) resumes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmeganshaw/hvacresumes.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Megan Shaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmeganshaw/hvacresumes/issues"
+  },
+  "homepage": "https://github.com/mmeganshaw/hvacresumes#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.2",
+    "npm": "^6.13.6",
+    "path": "^0.12.7"
+  }
+}

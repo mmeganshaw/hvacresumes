@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HVAC Salaries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <meta name="keywords" content="HVAC, Resume, Free Resume Review" />
+    <meta name="description" content="" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.js" rel="stylesheet" href="">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
+</head>
+
+<body>
+    <div class="landing-bas">
+        <span style="float: right; margin-right: 2rem; margin-top: 1rem;">
+            <a href="/contact">
+                <h3 style="color: white;">Contact Us</h3>
+            </a>
+        </span>
+        <span style="float: right; margin-right: 2rem; margin-top: 1rem;">
+            <a href="/">
+                <h3 style="color: white;">Home</h3>
+            </a>
+        </span>
+        <div class="inner">
+            <h1 style="font-family: 'Avenir', 'Arial', 'sans serif'; font-weight: 300;">
+                HVAC Professionals
+            </h1>
+            <h2 style="color: white;">
+                Service, Install, Project Management and Service Sales
+            </h2>
+            </br>
+        </div>
+        </br>
+    </div>
+
+    <div class="container first-container">
+        <form>
+            <div class="row">
+                <h2 style="text-align: center;">
+                    Please enter your information below.
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input type="text" id="firstname" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input type="text" id="lastname" class="form-control">
+                </div>
+            </div>
+            <div class="form-group" style="margin-top: 1rem;">
+                <label for="exampleInputEmail1">Current Job Title</label>
+                <input type="text" id="jobtitle" class="form-control">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Current City</label>
+                    <input type="text" class="form-control" id="currentcity">
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlSelect1">Current State</label>
+                    <select class="form-control" id="currentstate">
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-group" style="margin-top: 1rem;">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Attach your resume here</label>
+                <input type="file" class="form-control-file" id="resume">
+            </div>
+            <button type="submit" id="submitbutton" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/index.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#submitbutton').on('click', function (event) {
+            event.preventDefault();
+
+            var firstName = $.trim($('#firstname').val());
+            var lastName = $.trim($('#lastname').val());
+            var jobTitle = $.trim($("#jobtitle").val());
+            var currentCity = $.trim($('#currentcity').val());
+            var currentState = $.trim($('#currentstate').val());
+            var email = $.trim($('#email').val());
+            var resume1 = $.trim($('#resume').val());
+
+            function ifEmpty(a, b, c, d, e, f, g) {
+                if (a === "" || b === "" || c === "" || d === "" || e === "" || f === "" || g === "") {
+                    alert("Please fill out all of the relevant fields.")
+
+                } else {
+                    console.log("You're good to go buckaroo.")
+                    var resumeSubmission = {
+                        first_name: firstName,
+                        last_name: lastName,
+                        job_title: jobTitle,
+                        current_city: currentCity,
+                        current_state: currentState,
+                        email: email,
+                        resume: resume1
+                    }
+
+                    $.ajax({
+                        url: 'https://hooks.zapier.com/hooks/catch/4990402/oha7qmd/',
+                        method: "POST",
+                        dataType: "json",
+                        data: resumeSubmission
+                    }).success(
+                        console.log("This worked somehow LOL")
+                    )
+
+                    console.log(resumeSubmission);
+                }
+            }
+
+            ifEmpty(firstName, lastName, jobTitle, currentCity, currentState, email, resume1);
+
+
+
+            console.log(resume1);
+
+        })
+    })
+</script>
+<footer>
+    © 2020 freehvacresumereview.com
+</footer>
+
+</html>

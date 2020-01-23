@@ -1,0 +1,98 @@
+body {
+    font-style: 'Avenir', 'Helvetica', 'Arial', 'sans serif';
+    align-items: center;
+    text-align: center;
+    color: lightgrey;
+
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 4rem;
+    overflow: auto;
+    background-color: black;
+    text-align: left;
+}
+
+form {
+    text-align: left;
+    margin: 3xrem;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2rem;
+
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.first-gradient-holder {
+    background: rgb(28, 82, 155);
+    background: linear-gradient(0deg, rgba(28, 82, 155, 1) 0%, rgba(10, 42, 106, 1) 64%);
+}
+
+.second-gradient-holder {
+    background: rgb(91, 158, 178);
+    background: linear-gradient(0deg, rgba(91, 158, 178, 1) 0%, rgba(31, 88, 163, 1) 64%);
+}
+
+.third-gradient-holder {
+    background: rgb(145, 221, 189);
+    background: linear-gradient(0deg, rgba(145, 221, 189, 1) 0%, rgba(88, 154, 177, 1) 64%);
+}
+
+.first-container {
+    padding-top: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.landing-inner {
+    color: #fff;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.inner {
+    padding-top: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.landing-home {
+    position: relative;
+    background: url('../images/Header_Background.png') no-repeat center center/cover;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.landing-bas {
+    position: relative;
+    background: url('../images/Header_Background.png') no-repeat center center/cover;
+    height: 40vh;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.landing .shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
