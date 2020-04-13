@@ -38,22 +38,26 @@ h3 {
 .first-gradient-holder {
     background: rgb(28, 82, 155);
     background: linear-gradient(0deg, rgba(28, 82, 155, 1) 0%, rgba(10, 42, 106, 1) 64%);
+    border-radius: 10px;
 }
 
 .second-gradient-holder {
     background: rgb(91, 158, 178);
     background: linear-gradient(0deg, rgba(91, 158, 178, 1) 0%, rgba(31, 88, 163, 1) 64%);
+    border-radius: 10px;
 }
 
 .third-gradient-holder {
     background: rgb(145, 221, 189);
     background: linear-gradient(0deg, rgba(145, 221, 189, 1) 0%, rgba(88, 154, 177, 1) 64%);
+    border-radius: 10px;
 }
 
 .first-container {
     padding-top: 2rem;
     padding-left: 6rem;
     padding-right: 6rem;
+
 }
 
 .landing-inner {
